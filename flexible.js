@@ -70,10 +70,10 @@
 
     function refreshRem(){
         var width = docEl.clientWidth;
-        if (width / dpr > 640) {
-            width = 640 * dpr;
+        if (width / dpr > 720) {
+            width = 720 * dpr;
         }
-        var rem = 100 * (width / 320);
+        var rem = 100 * (width / 360);
         rem > 200 && (rem = 200), docEl.style.fontSize = rem + 'px';
         flexible.rem = win.rem = rem;
     }
